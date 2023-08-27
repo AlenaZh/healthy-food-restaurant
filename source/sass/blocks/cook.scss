@@ -1,0 +1,135 @@
+.cook {
+  padding: 100px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    grid-gap: 60px;
+  }
+
+  &__title {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    box-sizing: border-box;
+    width: 280px;
+    height: 280px;
+    padding: 30px;
+
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    background-color: #000000;
+    border-radius: 50%;
+  }
+
+  &__list {
+    display: grid;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, calc(33.3333% - 7px));
+  }
+
+  &__item {
+    position: relative;
+
+    padding-top: 90px;
+
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 64px;
+      height: 64px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: translateX(-50%);
+    }
+
+    &--1 {
+      &::before {
+        background-image: url(../img/icon-meet.svg);
+      }
+    }
+
+    &--2 {
+      &::before {
+        background-image: url(../img/icon-rice.svg);
+      }
+    }
+
+    &--3 {
+      &::before {
+        background-image: url(../img/icon-croissant.svg);
+      }
+    }
+  }
+
+  &__quantity {
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+  }
+
+  &__class {
+    margin: 20px 0 0;
+
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 990px) {
+  .cook {
+    &__wrapper {
+      flex-flow: column;
+    }
+
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .cook {
+    &__title {
+      width: 230px;
+      height: 230px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .cook {
+    &__list {
+      grid-gap: 90px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

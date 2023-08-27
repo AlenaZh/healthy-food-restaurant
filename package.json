@@ -1,0 +1,29 @@
+{
+  "name": "healthy-food-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "last 1 version",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "postcss-discard-comments": "^6.0.0",
+    "scss-reset": "^1.4.2"
+  },
+  "type": "module"
+}

@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+
+  font-size: 0.875rem;
+  color: #ffffff;
+
+  background-color: #333333;
+
+  &__top {
+    width: 420px;
+    padding: 50px 10px;
+
+    text-align: center;
+  }
+
+  &__bottom {
+    padding: 40px 0;
+
+    text-align: center;
+  }
+
+  &__copyright {
+    font-size: 0.8rem;
+  }
+
+  &__link {
+    color: #adcce9;
+
+    transition: 0.3s color;
+
+    &:hover {
+      color: #a1a1a1;
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: auto;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .footer {
+    &__top {
+      width: 100%;
+    }
+  }
+}

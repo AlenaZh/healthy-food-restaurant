@@ -1,0 +1,62 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Open Sans";
+
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Playfair Display";
+
+  font-display: swap;
+  src: url("../fonts/playfairdisplay-regular.woff2") format("woff2"), url("../fonts/playfairdisplay-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Playfair Display";
+
+  font-display: swap;
+  src: url("../fonts/playfairdisplay-bold.woff2") format("woff2"), url("../fonts/playfairdisplay-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Playfair Display";
+
+  font-display: swap;
+  src: url("../fonts/playfairdisplay-bolditalic.woff2") format("woff2"), url("../fonts/playfairdisplay-bolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: url("../fonts/roboto-light.woff2") format("woff2"), url("../fonts/roboto-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+}

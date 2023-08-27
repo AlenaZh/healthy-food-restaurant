@@ -1,0 +1,23 @@
+.feedback {
+  display: flex;
+  flex-basis: 800px;
+  flex-flow: column nowrap;
+}
+
+@media (max-width: 1200px) {
+  .feedback {
+    flex-basis: 660px;
+  }
+}
+
+@media (max-width: 990px) {
+  .feedback {
+    flex-basis: 500px;
+  }
+}
+
+@media (max-width: 780px) {
+  .feedback {
+    flex-basis: 380px;
+  }
+}

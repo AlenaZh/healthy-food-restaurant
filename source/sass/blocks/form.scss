@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 560px;
+
+  &__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__field {
+    width: 100%;
+    padding: 10px 12px;
+
+    border: 1px solid #b3b3b3;
+
+    &:focus-visible {
+      outline: auto;
+    }
+  }
+
+  &__link {
+    color: #478ac9;
+    text-decoration: none;
+  }
+
+  &__button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .form {
+    width: 100%;
+  }
+}

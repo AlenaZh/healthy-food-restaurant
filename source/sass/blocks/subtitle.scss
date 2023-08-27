@@ -1,0 +1,19 @@
+.subtitle {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  text-align: center;
+
+  &--size-s {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 580px) {
+  .subtitle {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+}

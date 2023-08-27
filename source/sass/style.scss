@@ -1,0 +1,26 @@
+@use "node_modules/scss-reset/reset";
+
+@use "fonts";
+@use "global";
+
+@use "blocks/sr-only";
+@use "blocks/container";
+@use "blocks/title";
+@use "blocks/subtitle";
+@use "blocks/tile";
+@use "blocks/button";
+@use "blocks/carousel";
+@use "blocks/stylized-text";
+@use "blocks/navigation";
+@use "blocks/header";
+@use "blocks/main";
+@use "blocks/promo";
+@use "blocks/about";
+@use "blocks/events";
+@use "blocks/feedback";
+@use "blocks/menu-restaurant";
+@use "blocks/gallery";
+@use "blocks/cook";
+@use "blocks/contact";
+@use "blocks/form";
+@use "blocks/footer";

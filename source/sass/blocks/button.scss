@@ -1,0 +1,31 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 73px;
+
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  border: 2px solid black;
+
+  transition: 0.3s color, 0.3s background-color;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: #000000;
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
+
+  &--short {
+    padding: 10px 30px;
+  }
+}

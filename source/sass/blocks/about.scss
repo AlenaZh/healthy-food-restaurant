@@ -1,0 +1,15 @@
+.about {
+  padding: 100px 0 0;
+
+  &__description {
+    margin: 20px 40px 100px;
+  }
+}
+
+@media (max-width: 780px) {
+  .about {
+    &__description {
+      margin: 20px 0 100px;
+    }
+  }
+}

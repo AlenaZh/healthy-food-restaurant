@@ -1,0 +1,13 @@
+.title {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  &--size-s {
+    font-size: 1rem;
+  }
+}

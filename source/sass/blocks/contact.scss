@@ -1,0 +1,14 @@
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 80px 0;
+
+  &__subtitle {
+    margin: 20px 0 0;
+  }
+
+  &__form {
+    margin: 40px 0 0;
+  }
+}

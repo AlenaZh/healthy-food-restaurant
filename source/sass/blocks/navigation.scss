@@ -1,0 +1,133 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100vh;
+
+  visibility: hidden;
+
+  animation-duration: 0.5s;
+
+  animation-fill-mode: forwards;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+  }
+
+  &--opened {
+    animation-name: open-nav;
+
+    & .navigation__overlay {
+      opacity: 1;
+    }
+  }
+
+  &--closed {
+    animation-name: close-nav;
+
+    & .navigation__overlay {
+      opacity: 0;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100%;
+    padding-top: 50px;
+
+    background-color: #000000;
+    transform: translateX(-100%);
+
+    transition: transform 0.5s ease;
+
+    .navigation--opened & {
+      transform: translateX(0);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+
+    width: 28px;
+    height: 28px;
+
+    &::before {
+      content: "\2715";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      font-size: 28px;
+      color: #ffffff;
+
+      transition: 0.3s opacity;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    padding: 0 20px;
+
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: lowercase;
+    text-decoration: none;
+
+    transition: 0.3s color;
+
+    &:hover {
+      color: #a1a1a1;
+    }
+  }
+}
+
+@keyframes open-nav {
+  0% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes close-nav {
+  0% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
